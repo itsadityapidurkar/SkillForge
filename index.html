@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillForge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F3F3F3;
+            color: #003135;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #004d61;
+            color: #FFFFFF;
+        }
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        h1 {
+            animation: fadeInScale 1.5s ease-out forwards;
+        }
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes scaleIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        #why-choose-us {
+            background-color: #005f73;
+            color: #FFFFFF;
+            animation: slideUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        #about-us {
+            background-color: #cae9f5;
+            color: #003135;
+            animation: fadeInRight 1s ease-out forwards;
+            animation-delay: 1.5s;
+        }
+        #privacy-policy {
+            background-color: #e8f6f8;
+            color: #004d61;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 2.5s;
+        }
+        #contact-us {
+            background-color: #89c9e7;
+            color: #FFFFFF;
+            animation: scaleIn 1s ease-out forwards;
+            animation-delay: 3.5s;
+        }
+        button {
+            background-color: #017a8c;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #005566;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white text-center py-4" style="background-color: #004d61;">
+        <h1>Welcome to SkillForge</h1>
+        <p>Your one-stop resource for learning and interview preparation</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #005f73, #89c9e7); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="#">SkillForge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="guides/guides.html">Installation Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="developer/developer.html">Coding Environment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="interview/interview.html">Interview Preparation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="why-choose-us" class="p-5">
+        <div class="container">
+            <h2 class="text-center">Why Choose SkillForge?</h2>
+            <p class="text-center">Unlock Your Potential with Unmatched Learning Experiences!</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3>🌟 Expert-Led Courses</h3>
+                    <p>Learn from top industry experts with hands-on, real-world insights.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>🚀 Career Boost</h3>
+                    <p>Master in-demand skills to fast-track your career growth.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>💡 Learn Anytime, Anywhere</h3>
+                    <p>Access high-quality courses from the comfort of your home—on any device.</p>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <h3>🏆 Proven Success Stories</h3>
+                    <p>Join thousands of learners who have transformed their lives with us.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>📚 Curated Content</h3>
+                    <p>Stay ahead with constantly updated learning materials and resources.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>🤝 Community Support</h3>
+                    <p>Be part of a supportive learning community ready to help you succeed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="p-5">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p>At SkillForge, we are dedicated to empowering learners with top-notch educational resources, tutorials, and tools for professional success.</p>
+        </div>
+    </section>
+
+    <section id="privacy-policy" class="p-5">
+        <div class="container">
+            <h2 class="text-center">Privacy Policy</h2>
+            <p>We value your privacy. SkillForge ensures that your data is securely stored and not shared with third parties.</p>
+        </div>
+    </section>
+
+    <section id="contact-us" class="p-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Feel free to reach out to us for any queries or support.</p>
+            <p class="text-center">Email: support@skillforge.com | Phone: +918876543214</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 SkillForge. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
