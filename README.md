@@ -1,4 +1,4 @@
 # Developers
 
-- **Aditya Pidurkar**  
-- **Sarthaki Fuley**
+- [**Aditya Pidurkar**]()
+- [**Sarthaki Fuley**]()
